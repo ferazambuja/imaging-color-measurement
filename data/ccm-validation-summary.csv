@@ -1,0 +1,5 @@
+evaluation,patches,mean_ciede2000,heldout_mean_ciede2000
+All-patch baseline,140,4.099,4.134
+Kept set (L* >= 25),112,3.170,3.221
+All patches with kept-set fit,140,4.126,
+Excluded dark patches,28,7.952,

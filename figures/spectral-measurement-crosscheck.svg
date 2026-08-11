@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="spectral-title spectral-desc">
+<title id="spectral-title">Repeated spectral measurements and ColorChecker interchange audit</title>
+<desc id="spectral-desc">Two repeated spectral series are compared on a common grid. Separate panels show the observer metadata discrepancy, one measurement serialized four ways, and candidate paired-series chart variation.</desc>
+<style>
+  .bg{fill:#f7f4ee} .panel{fill:#fff;stroke:#d7d0c4;stroke-width:1.5}
+  .title{font:700 28px system-ui;fill:#17212b} .subtitle{font:15px system-ui;fill:#52606d}
+  .head{font:700 18px system-ui;fill:#17212b} .body{font:14px system-ui;fill:#34414d}
+  .small{font:12px system-ui;fill:#66717c} .metric{font:700 29px system-ui;fill:#0b6e75}
+  .axis{stroke:#9ca7b0;stroke-width:1} .grid{stroke:#e6e1d8;stroke-width:1}
+  .ref{fill:none;stroke:#d05b32;stroke-width:3} .cand{fill:none;stroke:#167c80;stroke-width:3}
+  .band{fill:#9cc4c5} .band-hot{fill:#d05b32}
+</style>
+<rect class="bg" width="1200" height="820"/>
+<text class="title" x="52" y="54">Spectral cross-check: repetition, grids, and metadata</text>
+<text class="subtitle" x="52" y="82">Retained coursework measurements, re-evaluated with explicit wavelength grids and observer models</text>
+<rect class="panel" x="42" y="108" width="720" height="660" rx="14"/>
+<text class="head" x="74" y="140">Repeated spectral measurements</text>
+<line class="grid" x1="74.00" y1="158.0" x2="74.00" y2="458.0"/><text class="small" x="74.00" y="476" text-anchor="middle">380</text><line class="grid" x1="204.00" y1="158.0" x2="204.00" y2="458.0"/><text class="small" x="204.00" y="476" text-anchor="middle">450</text><line class="grid" x1="334.00" y1="158.0" x2="334.00" y2="458.0"/><text class="small" x="334.00" y="476" text-anchor="middle">520</text><line class="grid" x1="464.00" y1="158.0" x2="464.00" y2="458.0"/><text class="small" x="464.00" y="476" text-anchor="middle">590</text><line class="grid" x1="594.00" y1="158.0" x2="594.00" y2="458.0"/><text class="small" x="594.00" y="476" text-anchor="middle">660</text><line class="grid" x1="724.00" y1="158.0" x2="724.00" y2="458.0"/><text class="small" x="724.00" y="476" text-anchor="middle">730</text>
+<line class="axis" x1="74.0" y1="458.0" x2="724.0" y2="458.0"/>
+<line class="axis" x1="74.0" y1="158.0" x2="74.0" y2="458.0"/>
+<polyline class="ref" points="74.00,456.99 92.57,456.89 111.14,452.98 129.71,419.90 148.29,373.01 166.86,350.97 185.43,342.29 204.00,344.09 222.57,323.58 241.14,323.42 259.71,328.19 278.29,323.66 296.86,313.54 315.43,310.62 334.00,313.80 352.57,270.45 371.14,158.00 389.71,274.80 408.29,285.91 426.86,254.59 445.43,268.01 464.00,190.13 482.57,165.20 501.14,195.25 519.71,237.06 538.29,246.97 556.86,255.35 575.43,272.20 594.00,275.56 612.57,295.37 631.14,300.80 649.71,328.01 668.29,350.10 686.86,372.12 705.43,380.78 724.00,390.23"/>
+<polyline class="cand" points="74.00,457.58 92.57,457.51 111.14,451.45 129.71,421.25 148.29,376.37 166.86,351.91 185.43,343.27 204.00,339.36 222.57,322.54 241.14,323.24 259.71,328.82 278.29,323.79 296.86,309.81 315.43,307.13 334.00,311.67 352.57,248.75 371.14,188.20 389.71,276.48 408.29,280.60 426.86,258.28 445.43,257.85 464.00,184.20 482.57,171.32 501.14,202.40 519.71,232.79 538.29,247.42 556.86,253.42 575.43,268.83 594.00,278.40 612.57,294.23 631.14,304.00 649.71,328.87 668.29,355.15 686.86,374.36 705.43,382.27 724.00,387.28"/>
+<text class="small" x="399.0" y="497" text-anchor="middle">Wavelength (nm)</text>
+<line class="ref" x1="92" y1="516" x2="124" y2="516"/><text class="body" x="132" y="521">PR-655 mean (8 readings; 4 nm native)</text>
+<line class="cand" x1="405" y1="516" x2="437" y2="516"/><text class="body" x="445" y="521">i1Pro mean (8 readings; 10 nm native)</text>
+<text class="small" x="74.0" y="545">Common-grid normalized spectral density (scaled to shared plot maximum)</text>
+<text class="head" x="74" y="580">Where the squared residual is concentrated</text>
+<line class="axis" x1="74.0" y1="685.0" x2="724.0" y2="685.0"/>
+<rect class="band" x="74.00" y="684.97" width="16.06" height="0.03"/><rect class="band" x="92.06" y="684.97" width="16.06" height="0.03"/><rect class="band" x="110.11" y="684.80" width="16.06" height="0.20"/><rect class="band" x="128.17" y="684.84" width="16.06" height="0.16"/><rect class="band" x="146.22" y="684.01" width="16.06" height="0.99"/><rect class="band" x="164.28" y="684.92" width="16.06" height="0.08"/><rect class="band" x="182.33" y="684.92" width="16.06" height="0.08"/><rect class="band" x="200.39" y="683.04" width="16.06" height="1.96"/><rect class="band" x="218.44" y="684.90" width="16.06" height="0.10"/><rect class="band" x="236.50" y="685.00" width="16.06" height="0.00"/><rect class="band" x="254.56" y="684.96" width="16.06" height="0.04"/><rect class="band" x="272.61" y="685.00" width="16.06" height="0.00"/><rect class="band" x="290.67" y="683.78" width="16.06" height="1.22"/><rect class="band" x="308.72" y="683.93" width="16.06" height="1.07"/><rect class="band" x="326.78" y="684.60" width="16.06" height="0.40"/><rect class="band-hot" x="344.83" y="643.72" width="16.06" height="41.28"/><rect class="band-hot" x="362.89" y="605.00" width="16.06" height="80.00"/><rect class="band" x="380.94" y="684.75" width="16.06" height="0.25"/><rect class="band" x="399.00" y="682.53" width="16.06" height="2.47"/><rect class="band" x="417.06" y="683.81" width="16.06" height="1.19"/><rect class="band" x="435.11" y="675.95" width="16.06" height="9.05"/><rect class="band" x="453.17" y="681.92" width="16.06" height="3.08"/><rect class="band" x="471.22" y="681.71" width="16.06" height="3.29"/><rect class="band" x="489.28" y="680.51" width="16.06" height="4.49"/><rect class="band" x="507.33" y="683.40" width="16.06" height="1.60"/><rect class="band" x="525.39" y="684.98" width="16.06" height="0.02"/><rect class="band" x="543.44" y="684.67" width="16.06" height="0.33"/><rect class="band" x="561.50" y="684.00" width="16.06" height="1.00"/><rect class="band" x="579.56" y="684.29" width="16.06" height="0.71"/><rect class="band" x="597.61" y="684.89" width="16.06" height="0.11"/><rect class="band" x="615.67" y="684.10" width="16.06" height="0.90"/><rect class="band" x="633.72" y="684.94" width="16.06" height="0.06"/><rect class="band" x="651.78" y="682.76" width="16.06" height="2.24"/><rect class="band" x="669.83" y="684.56" width="16.06" height="0.44"/><rect class="band" x="687.89" y="684.81" width="16.06" height="0.19"/><rect class="band" x="705.94" y="684.24" width="16.06" height="0.76"/>
+<text class="metric" x="74" y="716">4.33%</text>
+<text class="body" x="190" y="712">directional relative-L2 difference</text>
+<text class="body" x="74" y="741">530 + 540 nm: 75.9% of 36-band original / 40.1% of 35-band post-shift squared residual.</text>
+<text class="small" x="74" y="760">35-band zero-offset baseline 4.33% → best fitted shift -0.95 nm: 3.08% (28.7% lower); no cause identified.</text>
+
+<rect class="panel" x="786" y="108" width="372" height="200" rx="14"/>
+<text class="head" x="812" y="142">Observer metadata changes the answer</text>
+<text class="metric" x="812" y="190">0.012 ΔE76</text>
+<text class="body" x="812" y="214">D65 / CIE 1964 10° vs embedded Lab</text>
+<text class="metric" x="812" y="258">3.91 ΔE76</text>
+<text class="body" x="812" y="282">D65 / CIE 1931 2° alternative</text>
+
+<rect class="panel" x="786" y="330" width="372" height="188" rx="14"/>
+<text class="head" x="812" y="365">One measurement, four serializations</text>
+<text class="metric" x="812" y="414">24 / 24</text>
+<text class="body" x="812" y="438">spectra match exactly by stable SAMPLE_ID</text>
+<text class="body" x="812" y="468">Layout labels differ; two SpectraShop files declare 38 fields but carry 41.</text>
+<text class="small" x="812" y="493">Interoperability check, not independent measurement agreement</text>
+
+<rect class="panel" x="786" y="540" width="372" height="228" rx="14"/>
+<text class="head" x="812" y="575">Candidate paired-series variation</text>
+<text class="metric" x="812" y="624">0.85 ΔE76</text>
+<text class="body" x="812" y="649">mean across 24 paired chart rows</text>
+<text class="metric" x="812" y="695">1.95 ΔE76 max</text>
+<text class="body" x="812" y="720">mean reflectance RMS 0.0046</text>
+<text class="small" x="812" y="746">Observed variation only; acquisition metadata is incomplete</text>
+</svg>

@@ -1,0 +1,4 @@
+channel,correlation,signed_mean_error_dn,direct_rmse_dn,max_abs_error_dn,affine_slope,affine_rmse_dn
+R,0.999999982,0.015,0.352,1.224,0.999982371,0.350
+G,1.000000000,-0.003,0.041,0.259,1.000001748,0.040
+B,0.999999980,-0.028,0.381,1.415,1.000013457,0.379

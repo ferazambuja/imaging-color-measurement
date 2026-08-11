@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="560" viewBox="0 0 920 560" role="img" aria-labelledby="title desc">
+  <title id="title">ColorChecker CCM validation summary</title>
+  <desc id="desc">Bars compare mean CIEDE2000 for a corrected RAW patch table, a lightness-filtered kept set, all patches under the kept-set fit, and the excluded dark patches. Held-out values are shown where defined.</desc>
+  <style>
+    text { font-family: Helvetica; fill: #172033; }
+    .title { font-size: 25px; font-weight: 700; }
+    .subtitle { font-size: 14px; fill: #5f6b7a; }
+    .panel-title { font-size: 16px; font-weight: 700; }
+    .axis { font-size: 12px; fill: #5f6b7a; }
+    .legend { font-size: 12px; }
+    .value { font-size: 11px; font-weight: 600; }
+    .node-title { font-size: 15px; font-weight: 700; }
+    .node-detail { font-size: 12px; fill: #5f6b7a; }
+  </style>
+  <rect width="920" height="560" rx="16" fill="#ffffff"/>
+  <text x="44" y="48" class="title">ColorChecker / CCM validation</text>
+  <text x="44" y="74" class="subtitle">Corrected RAW patches · linear 3×3 RGB→XYZ model · lower CIEDE2000 is better</text>
+  <rect x="36" y="98" width="848" height="390" rx="12" fill="#f7f9fc"/>
+  <line x1="88" y1="402.00" x2="844" y2="402.00" stroke="#d8dee8"/>
+  <text x="78" y="406.00" text-anchor="end" class="axis">0</text>
+  <line x1="88" y1="371.33" x2="844" y2="371.33" stroke="#d8dee8"/>
+  <line x1="88" y1="340.67" x2="844" y2="340.67" stroke="#d8dee8"/>
+  <text x="78" y="344.67" text-anchor="end" class="axis">2</text>
+  <line x1="88" y1="310.00" x2="844" y2="310.00" stroke="#d8dee8"/>
+  <line x1="88" y1="279.33" x2="844" y2="279.33" stroke="#d8dee8"/>
+  <text x="78" y="283.33" text-anchor="end" class="axis">4</text>
+  <line x1="88" y1="248.67" x2="844" y2="248.67" stroke="#d8dee8"/>
+  <line x1="88" y1="218.00" x2="844" y2="218.00" stroke="#d8dee8"/>
+  <text x="78" y="222.00" text-anchor="end" class="axis">6</text>
+  <line x1="88" y1="187.33" x2="844" y2="187.33" stroke="#d8dee8"/>
+  <line x1="88" y1="156.67" x2="844" y2="156.67" stroke="#d8dee8"/>
+  <text x="78" y="160.67" text-anchor="end" class="axis">8</text>
+  <line x1="88" y1="126.00" x2="844" y2="126.00" stroke="#d8dee8"/>
+  <rect x="137.50" y="276.30" width="42" height="125.70" rx="3" fill="#0f766e"/>
+  <text x="158.50" y="269.30" text-anchor="middle" class="value">4.099</text>
+  <rect x="185.50" y="275.22" width="42" height="126.78" rx="3" fill="#7c3aed"/>
+  <text x="206.50" y="268.22" text-anchor="middle" class="value">4.134</text>
+  <text x="182.50" y="426" text-anchor="middle" class="axis">All-patch</text>
+  <text x="182.50" y="443" text-anchor="middle" class="axis">baseline</text>
+  <text x="182.50" y="461" text-anchor="middle" class="axis">n=140</text>
+  <rect x="326.50" y="304.79" width="42" height="97.21" rx="3" fill="#0f766e"/>
+  <text x="347.50" y="297.79" text-anchor="middle" class="value">3.170</text>
+  <rect x="374.50" y="303.22" width="42" height="98.78" rx="3" fill="#7c3aed"/>
+  <text x="395.50" y="296.22" text-anchor="middle" class="value">3.221</text>
+  <text x="371.50" y="426" text-anchor="middle" class="axis">Kept set (L*</text>
+  <text x="371.50" y="443" text-anchor="middle" class="axis">&gt;= 25)</text>
+  <text x="371.50" y="461" text-anchor="middle" class="axis">n=112</text>
+  <rect x="539.50" y="275.47" width="42" height="126.53" rx="3" fill="#0f766e"/>
+  <text x="560.50" y="268.47" text-anchor="middle" class="value">4.126</text>
+  <text x="560.50" y="426" text-anchor="middle" class="axis">All patches with</text>
+  <text x="560.50" y="443" text-anchor="middle" class="axis">kept-set fit</text>
+  <text x="560.50" y="461" text-anchor="middle" class="axis">n=140</text>
+  <rect x="728.50" y="158.14" width="42" height="243.86" rx="3" fill="#0f766e"/>
+  <text x="749.50" y="151.14" text-anchor="middle" class="value">7.952</text>
+  <text x="749.50" y="426" text-anchor="middle" class="axis">Excluded dark</text>
+  <text x="749.50" y="443" text-anchor="middle" class="axis">patches</text>
+  <text x="749.50" y="461" text-anchor="middle" class="axis">n=28</text>
+  <rect x="286" y="467" width="12" height="12" rx="2" fill="#0f766e"/>
+  <text x="305" y="477" class="legend">fit/evaluation mean</text>
+  <rect x="470" y="467" width="12" height="12" rx="2" fill="#7c3aed"/>
+  <text x="489" y="477" class="legend">5-fold held-out mean</text>
+  <text x="44" y="528" class="subtitle">The kept-set reduction is reported as a flare-handling policy; excluded patches remain visible and do not show a better camera model.</text>
+</svg>

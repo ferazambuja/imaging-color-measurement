@@ -1,0 +1,55 @@
+name: ci
+
+# Builds only the published reference code and its synthetic tests. No private
+# camera capture or instrument archive is involved. Archive-backed analyses run
+# against retained inputs outside this public workflow; CI verifies the selected
+# numerical modules, not the private acquisitions.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    name: build-and-test (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v7
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+      - name: Build
+        run: cmake --build build --parallel
+      - name: Test
+        run: ctest --test-dir build --output-on-failure
+
+  sanitizers:
+    name: undefined-behavior-and-address-sanitizer
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Configure
+        run: >
+          cmake -S . -B build-san -DCMAKE_BUILD_TYPE=RelWithDebInfo
+          -DCMAKE_CXX_FLAGS="-fsanitize=undefined,address -fno-omit-frame-pointer -fno-sanitize-recover=all"
+      - name: Build
+        run: cmake --build build-san --parallel
+      - name: Test
+        run: ctest --test-dir build-san --output-on-failure
+
+  repository:
+    name: repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Test repository checks
+        run: python3 tools/test_check_repository.py
+      - name: Test the retired project Page redirect
+        run: python3 tools/test_pages_redirect.py
+      - name: Check links, tables, and image metadata
+        run: python3 tools/check_repository.py

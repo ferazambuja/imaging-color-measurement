@@ -1,0 +1,16 @@
+check,value,unit,note
+retained_distinct_readings,89,count,resolved by content from byte-identical aliases
+byte_identical_aliases,45,count,same bytes under a second name; analyzed once
+declared_groups,40,count,assigned by the retained grouping record
+repeated_groups,37,count,two or three readings each
+singleton_groups,3,count,no variation statistics reported
+closure_scale,683.0167582353332,dimensionless,archive-derived; not a standard constant
+closure_max_abs_relative_residual,1.5543122344752192e-13,percent,equal sample weights
+closure_rms_relative_residual,5.004889505182855e-14,percent,equal sample weights
+independent_read_source_identity_comparisons,89,count,second-reader source-file identity
+independent_read_vector_hash_comparisons,178,count,two exact binary64 vector hashes per reading
+independent_read_numeric_comparisons,623,count,seven numeric fields per reading
+independent_reader,MATLAB R2026a,software,independent retained-file reader
+independent_read_tolerance,1e-12,absolute_or_relative,comparison tolerance
+independent_read_largest_difference,4.547473508864641e-12,K,on recorded CCT
+independent_read_result,match,status,all declared comparisons passed

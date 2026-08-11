@@ -1,0 +1,6 @@
+camera,ssf_source,smi_cc18,smi_cc24,smi_sg140,mean_ciede2000_cc18,luther_quality_index,closure_patch_count,closure_r_rms_percent,closure_g_rms_percent,closure_b_rms_percent,closure_min_channel_correlation
+Canon 5D2,toolkit RAW extraction,90.7,93.2,93.3,0.93,0.778,140,9.539,9.840,11.618,0.994328
+Sony A7RII,legacy measured SSF,90.0,92.4,91.7,0.97,0.701,140,10.803,11.149,13.349,0.992517
+Sony A7SII,legacy measured SSF,89.8,92.2,91.4,0.88,0.690,140,9.901,9.917,11.252,0.993567
+Nikon D810,legacy measured SSF,89.4,91.7,91.0,1.07,0.701,140,10.802,11.069,13.802,0.992676
+Phase One IQ3 100,legacy measured SSF,88.3,90.6,90.4,1.10,0.652,,,,,

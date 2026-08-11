@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Five-camera spectral color-fidelity comparison</title>
+  <desc id="desc">Grouped markers compare ISO 17321-style SMI approximations over the 18 chromatic ColorChecker patches, the full 24-patch chart, and the 140-patch ColorChecker SG.</desc>
+  <style>
+    text { font-family: Helvetica; fill: #172033; }
+    .title { font-size: 25px; font-weight: 700; }
+    .subtitle { font-size: 14px; fill: #5f6b7a; }
+    .panel-title { font-size: 16px; font-weight: 700; }
+    .axis { font-size: 12px; fill: #5f6b7a; }
+    .legend { font-size: 12px; }
+    .value { font-size: 11px; font-weight: 600; }
+    .node-title { font-size: 15px; font-weight: 700; }
+    .node-detail { font-size: 12px; fill: #5f6b7a; }
+  </style>
+  <rect width="960" height="560" rx="16" fill="#ffffff"/>
+  <text x="44" y="48" class="title">Spectral color-fidelity comparison</text>
+  <text x="44" y="74" class="subtitle">Higher is better · CIE D55 · ISO 17321-style approximation, not certified Annex-B equivalence</text>
+  <rect x="36" y="98" width="888" height="402" rx="12" fill="#f7f9fc"/>
+  <line x1="92" y1="420.00" x2="886" y2="420.00" stroke="#d8dee8"/>
+  <text x="82" y="424.00" text-anchor="end" class="axis">86</text>
+  <line x1="92" y1="347.00" x2="886" y2="347.00" stroke="#d8dee8"/>
+  <text x="82" y="351.00" text-anchor="end" class="axis">88</text>
+  <line x1="92" y1="274.00" x2="886" y2="274.00" stroke="#d8dee8"/>
+  <text x="82" y="278.00" text-anchor="end" class="axis">90</text>
+  <line x1="92" y1="201.00" x2="886" y2="201.00" stroke="#d8dee8"/>
+  <text x="82" y="205.00" text-anchor="end" class="axis">92</text>
+  <line x1="92" y1="128.00" x2="886" y2="128.00" stroke="#d8dee8"/>
+  <text x="82" y="132.00" text-anchor="end" class="axis">94</text>
+  <circle class="score-marker" cx="141.40" cy="248.45" r="7" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+  <circle class="score-marker" cx="171.40" cy="157.20" r="7" fill="#0f766e" stroke="#ffffff" stroke-width="2"/>
+  <circle class="score-marker" cx="201.40" cy="153.55" r="7" fill="#7c3aed" stroke="#ffffff" stroke-width="2"/>
+  <text x="171.40" y="444" text-anchor="middle" class="axis">Canon 5D2</text>
+  <text x="171.40" y="462" text-anchor="middle" class="axis">QI 0.778</text>
+  <circle class="score-marker" cx="300.20" cy="274.00" r="7" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+  <circle class="score-marker" cx="330.20" cy="186.40" r="7" fill="#0f766e" stroke="#ffffff" stroke-width="2"/>
+  <circle class="score-marker" cx="360.20" cy="211.95" r="7" fill="#7c3aed" stroke="#ffffff" stroke-width="2"/>
+  <text x="330.20" y="444" text-anchor="middle" class="axis">Sony A7RII</text>
+  <text x="330.20" y="462" text-anchor="middle" class="axis">QI 0.701</text>
+  <circle class="score-marker" cx="459.00" cy="281.30" r="7" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+  <circle class="score-marker" cx="489.00" cy="193.70" r="7" fill="#0f766e" stroke="#ffffff" stroke-width="2"/>
+  <circle class="score-marker" cx="519.00" cy="222.90" r="7" fill="#7c3aed" stroke="#ffffff" stroke-width="2"/>
+  <text x="489.00" y="444" text-anchor="middle" class="axis">Sony A7SII</text>
+  <text x="489.00" y="462" text-anchor="middle" class="axis">QI 0.690</text>
+  <circle class="score-marker" cx="617.80" cy="295.90" r="7" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+  <circle class="score-marker" cx="647.80" cy="211.95" r="7" fill="#0f766e" stroke="#ffffff" stroke-width="2"/>
+  <circle class="score-marker" cx="677.80" cy="237.50" r="7" fill="#7c3aed" stroke="#ffffff" stroke-width="2"/>
+  <text x="647.80" y="444" text-anchor="middle" class="axis">Nikon D810</text>
+  <text x="647.80" y="462" text-anchor="middle" class="axis">QI 0.701</text>
+  <circle class="score-marker" cx="776.60" cy="336.05" r="7" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+  <circle class="score-marker" cx="806.60" cy="252.10" r="7" fill="#0f766e" stroke="#ffffff" stroke-width="2"/>
+  <circle class="score-marker" cx="836.60" cy="259.40" r="7" fill="#7c3aed" stroke="#ffffff" stroke-width="2"/>
+  <text x="806.60" y="444" text-anchor="middle" class="axis">Phase One IQ3 100</text>
+  <text x="806.60" y="462" text-anchor="middle" class="axis">QI 0.652</text>
+  <circle cx="216" cy="478" r="6" fill="#2563eb"/>
+  <text x="229" y="482" class="legend">CC-18 chromatic</text>
+  <circle cx="406" cy="478" r="6" fill="#0f766e"/>
+  <text x="419" y="482" class="legend">CC-24</text>
+  <circle cx="596" cy="478" r="6" fill="#7c3aed"/>
+  <text x="609" y="482" class="legend">SG-140</text>
+  <text x="44" y="530" class="subtitle">Canon uses toolkit RAW extraction; the other rows use measured legacy SSFs. QI is the separate Luther-fit quality index.</text>
+</svg>

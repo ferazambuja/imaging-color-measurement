@@ -1,0 +1,14 @@
+control,camera,variant,channel,retained_wavelengths,total_wavelengths,normalized_rms,normalized_correlation,luther_combined_residual,smi_cc18
+same_camera_curve_agreement,Canon 5D2,toolkit_vs_legacy,R,48,48,0.0063000,0.9993665,,
+same_camera_curve_agreement,Canon 5D2,toolkit_vs_legacy,G,38,48,0.0077259,0.9997672,,
+same_camera_curve_agreement,Canon 5D2,toolkit_vs_legacy,B,44,48,0.0039666,0.9999049,,
+shared_run_luther_source_check,Canon 5D2,toolkit_extraction,,,,,,0.2218,
+shared_run_luther_source_check,Canon 5D2,legacy_ssf,,,,,,0.2221,
+shared_run_luther_source_check,Nikon D810,toolkit_extraction,,,,,,0.2972,
+shared_run_luther_source_check,Nikon D810,legacy_ssf,,,,,,0.2989,
+shared_run_luther_source_check,Sony A7RII,toolkit_extraction,,,,,,0.2970,
+shared_run_luther_source_check,Sony A7RII,legacy_ssf,,,,,,0.2991,
+shared_run_luther_source_check,Sony A7SII,toolkit_extraction,,,,,,0.3087,
+shared_run_luther_source_check,Sony A7SII,legacy_ssf,,,,,,0.3102,
+iq3_retained_run_check,Phase One IQ3 100,run_1,,,,,,0.348,88.3
+iq3_retained_run_check,Phase One IQ3 100,run_2,,,,,,0.336,88.4

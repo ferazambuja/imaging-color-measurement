@@ -1,0 +1,10 @@
+# Local CMake build trees
+build*/
+cmake-build*/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Generated GitHub Pages artifact
+_site/

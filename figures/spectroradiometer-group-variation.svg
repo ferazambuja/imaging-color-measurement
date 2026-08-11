@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+<rect width="1200" height="650" fill="#f8fafc"/>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#172033}.title{font-size:25px;font-weight:700}.subtitle{font-size:14px;fill:#4b5563}.axis{font-size:12px;fill:#4b5563}.label{font-size:10px;fill:#4b5563}.note{font-size:13px;fill:#374151}</style>
+<text x="70" y="45" class="title">Spectroradiometer measurement-group variation</text>
+<text x="70" y="72" class="subtitle">Absolute level, normalized spectral shape, and recorded-XYZ chromaticity are reported separately</text>
+<line x1="70" y1="540.0" x2="720" y2="540.0" stroke="#dbe3ec"/>
+<text x="58" y="544.0" text-anchor="end" class="axis">0%</text>
+<line x1="70" y1="444.4" x2="720" y2="444.4" stroke="#dbe3ec"/>
+<text x="58" y="448.4" text-anchor="end" class="axis">10%</text>
+<line x1="70" y1="348.9" x2="720" y2="348.9" stroke="#dbe3ec"/>
+<text x="58" y="352.9" text-anchor="end" class="axis">20%</text>
+<line x1="70" y1="253.3" x2="720" y2="253.3" stroke="#dbe3ec"/>
+<text x="58" y="257.3" text-anchor="end" class="axis">30%</text>
+<line x1="70" y1="157.8" x2="720" y2="157.8" stroke="#dbe3ec"/>
+<text x="58" y="161.8" text-anchor="end" class="axis">40%</text>
+<rect x="71.0" y="331.1" width="15.6" height="208.9" fill="#0f766e" opacity="0.85"/>
+<rect x="88.6" y="525.0" width="15.6" height="15.0" fill="#0f766e" opacity="0.85"/>
+<rect x="106.1" y="409.9" width="15.6" height="130.1" fill="#0f766e" opacity="0.85"/>
+<rect x="123.7" y="400.4" width="15.6" height="139.6" fill="#0f766e" opacity="0.85"/>
+<rect x="141.3" y="142.0" width="15.6" height="398.0" fill="#0f766e" opacity="0.85"/>
+<rect x="158.8" y="471.5" width="15.6" height="68.5" fill="#0f766e" opacity="0.85"/>
+<rect x="176.4" y="538.6" width="15.6" height="1.4" fill="#0f766e" opacity="0.85"/>
+<rect x="194.0" y="496.9" width="15.6" height="43.1" fill="#0f766e" opacity="0.85"/>
+<rect x="211.5" y="522.0" width="15.6" height="18.0" fill="#0f766e" opacity="0.85"/>
+<rect x="229.1" y="476.9" width="15.6" height="63.1" fill="#0f766e" opacity="0.85"/>
+<rect x="246.7" y="482.7" width="15.6" height="57.3" fill="#0f766e" opacity="0.85"/>
+<rect x="264.2" y="304.3" width="15.6" height="235.7" fill="#0f766e" opacity="0.85"/>
+<rect x="281.8" y="435.5" width="15.6" height="104.5" fill="#0f766e" opacity="0.85"/>
+<rect x="299.4" y="466.0" width="15.6" height="74.0" fill="#0f766e" opacity="0.85"/>
+<rect x="316.9" y="296.0" width="15.6" height="244.0" fill="#0f766e" opacity="0.85"/>
+<rect x="334.5" y="532.7" width="15.6" height="7.3" fill="#0f766e" opacity="0.85"/>
+<rect x="352.1" y="464.1" width="15.6" height="75.9" fill="#2563eb" opacity="0.85"/>
+<rect x="369.6" y="498.3" width="15.6" height="41.7" fill="#2563eb" opacity="0.85"/>
+<rect x="387.2" y="448.5" width="15.6" height="91.5" fill="#2563eb" opacity="0.85"/>
+<rect x="404.8" y="503.9" width="15.6" height="36.1" fill="#2563eb" opacity="0.85"/>
+<rect x="422.4" y="485.6" width="15.6" height="54.4" fill="#2563eb" opacity="0.85"/>
+<rect x="439.9" y="411.5" width="15.6" height="128.5" fill="#2563eb" opacity="0.85"/>
+<rect x="457.5" y="470.4" width="15.6" height="69.6" fill="#2563eb" opacity="0.85"/>
+<rect x="475.1" y="492.4" width="15.6" height="47.6" fill="#2563eb" opacity="0.85"/>
+<rect x="492.6" y="404.1" width="15.6" height="135.9" fill="#2563eb" opacity="0.85"/>
+<rect x="510.2" y="503.4" width="15.6" height="36.6" fill="#2563eb" opacity="0.85"/>
+<rect x="527.8" y="469.4" width="15.6" height="70.6" fill="#2563eb" opacity="0.85"/>
+<rect x="545.3" y="395.3" width="15.6" height="144.7" fill="#2563eb" opacity="0.85"/>
+<rect x="562.9" y="485.1" width="15.6" height="54.9" fill="#2563eb" opacity="0.85"/>
+<rect x="580.5" y="499.4" width="15.6" height="40.6" fill="#2563eb" opacity="0.85"/>
+<rect x="598.0" y="400.4" width="15.6" height="139.6" fill="#2563eb" opacity="0.85"/>
+<rect x="615.6" y="497.3" width="15.6" height="42.7" fill="#2563eb" opacity="0.85"/>
+<rect x="633.2" y="481.4" width="15.6" height="58.6" fill="#2563eb" opacity="0.85"/>
+<rect x="650.7" y="412.0" width="15.6" height="128.0" fill="#2563eb" opacity="0.85"/>
+<rect x="668.3" y="479.2" width="15.6" height="60.8" fill="#2563eb" opacity="0.85"/>
+<rect x="685.9" y="523.3" width="15.6" height="16.7" fill="#2563eb" opacity="0.85"/>
+<rect x="703.4" y="435.5" width="15.6" height="104.5" fill="#2563eb" opacity="0.85"/>
+<line x1="70" y1="540" x2="720" y2="540" stroke="#64748b"/>
+<text x="395.0" y="582" text-anchor="middle" class="axis">37 groups with n ≥ 2</text>
+<text x="25" y="325.0" transform="rotate(-90 25 325.0)" text-anchor="middle" class="axis">Spectral-integral CV</text>
+<text x="70" y="92" class="note">Median 7.17% · maximum 41.65%</text>
+<rect x="510" y="79" width="12" height="12" fill="#0f766e"/><text x="528" y="90" class="axis">ramp/reference</text>
+<rect x="630" y="79" width="12" height="12" fill="#2563eb"/><text x="648" y="90" class="axis">scene</text>
+<line x1="800.0" y1="110" x2="800.0" y2="540" stroke="#e2e8f0"/>
+<text x="800.0" y="560" text-anchor="middle" class="axis">0%</text>
+<line x1="873.3" y1="110" x2="873.3" y2="540" stroke="#e2e8f0"/>
+<text x="873.3" y="560" text-anchor="middle" class="axis">10%</text>
+<line x1="946.7" y1="110" x2="946.7" y2="540" stroke="#e2e8f0"/>
+<text x="946.7" y="560" text-anchor="middle" class="axis">20%</text>
+<line x1="1020.0" y1="110" x2="1020.0" y2="540" stroke="#e2e8f0"/>
+<text x="1020.0" y="560" text-anchor="middle" class="axis">30%</text>
+<line x1="1093.3" y1="110" x2="1093.3" y2="540" stroke="#e2e8f0"/>
+<text x="1093.3" y="560" text-anchor="middle" class="axis">40%</text>
+<line x1="800" y1="540.0" x2="1130" y2="540.0" stroke="#e2e8f0"/>
+<text x="790" y="544.0" text-anchor="end" class="axis">0</text>
+<line x1="800" y1="396.7" x2="1130" y2="396.7" stroke="#e2e8f0"/>
+<text x="790" y="400.7" text-anchor="end" class="axis">1</text>
+<line x1="800" y1="253.3" x2="1130" y2="253.3" stroke="#e2e8f0"/>
+<text x="790" y="257.3" text-anchor="end" class="axis">2</text>
+<line x1="800" y1="110.0" x2="1130" y2="110.0" stroke="#e2e8f0"/>
+<text x="790" y="114.0" text-anchor="end" class="axis">3</text>
+<circle cx="960.3" cy="131.2" r="8.3" fill="#ea580c" opacity="0.70"><title>ramp_patch_01: CV 21.86%, Δu′v′ 0.002852, shape 1.076%</title></circle>
+<circle cx="811.5" cy="494.1" r="5.2" fill="#ea580c" opacity="0.70"><title>ramp_patch_02: CV 1.57%, Δu′v′ 0.000320, shape 0.293%</title></circle>
+<circle cx="899.9" cy="504.2" r="5.4" fill="#ea580c" opacity="0.70"><title>ramp_patch_03: CV 13.62%, Δu′v′ 0.000250, shape 0.352%</title></circle>
+<circle cx="907.1" cy="422.2" r="6.0" fill="#ea580c" opacity="0.70"><title>ramp_patch_04: CV 14.61%, Δu′v′ 0.000822, shape 0.507%</title></circle>
+<circle cx="1105.4" cy="311.9" r="6.8" fill="#ea580c" opacity="0.70"><title>ramp_patch_05: CV 41.65%, Δu′v′ 0.001592, shape 0.706%</title></circle>
+<circle cx="852.6" cy="341.9" r="6.4" fill="#ea580c" opacity="0.70"><title>ramp_patch_06: CV 7.17%, Δu′v′ 0.001382, shape 0.591%</title></circle>
+<circle cx="801.1" cy="424.1" r="5.4" fill="#ea580c" opacity="0.70"><title>ramp_patch_07: CV 0.15%, Δu′v′ 0.000808, shape 0.347%</title></circle>
+<circle cx="833.0" cy="481.2" r="5.0" fill="#ea580c" opacity="0.70"><title>ramp_patch_08: CV 4.51%, Δu′v′ 0.000410, shape 0.240%</title></circle>
+<circle cx="813.8" cy="517.6" r="5.6" fill="#ea580c" opacity="0.70"><title>ramp_patch_09: CV 1.89%, Δu′v′ 0.000157, shape 0.401%</title></circle>
+<circle cx="848.4" cy="494.6" r="5.5" fill="#ea580c" opacity="0.70"><title>ramp_patch_10: CV 6.60%, Δu′v′ 0.000317, shape 0.376%</title></circle>
+<circle cx="844.0" cy="519.3" r="5.5" fill="#ea580c" opacity="0.70"><title>ramp_patch_11: CV 6.00%, Δu′v′ 0.000145, shape 0.379%</title></circle>
+<circle cx="980.9" cy="484.1" r="5.8" fill="#ea580c" opacity="0.70"><title>ramp_patch_12: CV 24.66%, Δu′v′ 0.000390, shape 0.441%</title></circle>
+<circle cx="880.2" cy="437.0" r="6.0" fill="#ea580c" opacity="0.70"><title>ramp_patch_13: CV 10.94%, Δu′v′ 0.000719, shape 0.497%</title></circle>
+<circle cx="856.8" cy="424.2" r="6.2" fill="#ea580c" opacity="0.70"><title>ramp_patch_14: CV 7.74%, Δu′v′ 0.000808, shape 0.561%</title></circle>
+<circle cx="987.3" cy="282.5" r="7.3" fill="#ea580c" opacity="0.70"><title>ramp_patch_15: CV 25.54%, Δu′v′ 0.001797, shape 0.833%</title></circle>
+<circle cx="805.6" cy="537.4" r="4.2" fill="#ea580c" opacity="0.70"><title>reference_prd: CV 0.77%, Δu′v′ 0.000018, shape 0.061%</title></circle>
+<circle cx="858.3" cy="466.5" r="5.4" fill="#ea580c" opacity="0.70"><title>scene_01: CV 7.94%, Δu′v′ 0.000513, shape 0.361%</title></circle>
+<circle cx="832.0" cy="458.4" r="6.1" fill="#ea580c" opacity="0.70"><title>scene_02: CV 4.36%, Δu′v′ 0.000570, shape 0.518%</title></circle>
+<circle cx="870.2" cy="441.2" r="6.0" fill="#ea580c" opacity="0.70"><title>scene_03: CV 9.58%, Δu′v′ 0.000689, shape 0.495%</title></circle>
+<circle cx="827.7" cy="446.8" r="6.5" fill="#ea580c" opacity="0.70"><title>scene_04: CV 3.78%, Δu′v′ 0.000650, shape 0.622%</title></circle>
+<circle cx="841.8" cy="456.5" r="6.4" fill="#ea580c" opacity="0.70"><title>scene_05: CV 5.69%, Δu′v′ 0.000582, shape 0.592%</title></circle>
+<circle cx="898.6" cy="453.2" r="5.0" fill="#ea580c" opacity="0.70"><title>scene_06: CV 13.45%, Δu′v′ 0.000605, shape 0.252%</title></circle>
+<circle cx="853.4" cy="376.2" r="7.1" fill="#ea580c" opacity="0.70"><title>scene_07: CV 7.28%, Δu′v′ 0.001143, shape 0.767%</title></circle>
+<circle cx="836.5" cy="370.7" r="7.5" fill="#ea580c" opacity="0.70"><title>scene_08: CV 4.98%, Δu′v′ 0.001181, shape 0.867%</title></circle>
+<circle cx="904.3" cy="402.3" r="6.1" fill="#ea580c" opacity="0.70"><title>scene_09: CV 14.23%, Δu′v′ 0.000961, shape 0.537%</title></circle>
+<circle cx="828.1" cy="333.8" r="8.2" fill="#ea580c" opacity="0.70"><title>scene_10: CV 3.83%, Δu′v′ 0.001438, shape 1.043%</title></circle>
+<circle cx="854.2" cy="388.4" r="7.8" fill="#ea580c" opacity="0.70"><title>scene_11: CV 7.39%, Δu′v′ 0.001058, shape 0.948%</title></circle>
+<circle cx="911.1" cy="439.2" r="5.1" fill="#ea580c" opacity="0.70"><title>scene_12: CV 15.15%, Δu′v′ 0.000703, shape 0.271%</title></circle>
+<circle cx="842.2" cy="429.6" r="7.2" fill="#ea580c" opacity="0.70"><title>scene_13: CV 5.75%, Δu′v′ 0.000770, shape 0.791%</title></circle>
+<circle cx="831.1" cy="438.9" r="7.6" fill="#ea580c" opacity="0.70"><title>scene_14: CV 4.24%, Δu′v′ 0.000706, shape 0.895%</title></circle>
+<circle cx="907.1" cy="391.3" r="6.3" fill="#ea580c" opacity="0.70"><title>scene_15: CV 14.61%, Δu′v′ 0.001037, shape 0.571%</title></circle>
+<circle cx="832.8" cy="473.8" r="6.2" fill="#ea580c" opacity="0.70"><title>scene_16: CV 4.47%, Δu′v′ 0.000462, shape 0.556%</title></circle>
+<circle cx="845.0" cy="424.9" r="7.2" fill="#ea580c" opacity="0.70"><title>scene_17: CV 6.13%, Δu′v′ 0.000803, shape 0.798%</title></circle>
+<circle cx="898.2" cy="421.5" r="6.1" fill="#ea580c" opacity="0.70"><title>scene_18: CV 13.39%, Δu′v′ 0.000827, shape 0.531%</title></circle>
+<circle cx="846.7" cy="458.6" r="6.1" fill="#ea580c" opacity="0.70"><title>scene_19: CV 6.37%, Δu′v′ 0.000568, shape 0.517%</title></circle>
+<circle cx="812.8" cy="474.8" r="5.7" fill="#ea580c" opacity="0.70"><title>scene_20: CV 1.75%, Δu′v′ 0.000455, shape 0.415%</title></circle>
+<circle cx="880.2" cy="454.4" r="5.8" fill="#ea580c" opacity="0.70"><title>scene_21: CV 10.93%, Δu′v′ 0.000597, shape 0.443%</title></circle>
+<line x1="800" y1="540" x2="1130" y2="540" stroke="#64748b"/>
+<line x1="800" y1="110" x2="800" y2="540" stroke="#64748b"/>
+<text x="965.0" y="585" text-anchor="middle" class="axis">Spectral-integral CV</text>
+<text x="752" y="325.0" transform="rotate(-90 752 325.0)" text-anchor="middle" class="axis">Maximum pair Δu′v′ × 1000</text>
+<text x="800" y="92" class="note">Circle size = normalized-shape residual</text>
+<text x="70" y="603" class="note">Three singleton groups are retained but excluded from variation statistics.</text>
+<text x="70" y="626" class="note">Cause of the observed within-group variation is unresolved.</text>
+</svg>

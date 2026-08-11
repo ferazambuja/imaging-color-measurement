@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="audit-title audit-description">
+<title id="audit-title">CAM16 equation audit</title>
+<desc id="audit-description">Equation-level diagnostics from Hellwig and Fairchild 2022: normalized CAM16 brightness against the proposed linear relation, and the isolated Ncb factor compared with the CAM16 chroma expression while adapted responses are held fixed over the paper’s reference-lightness sweep. A published performance table retains both improvements and the colorfulness regression.</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#172033}.title{font-size:28px;font-weight:700}.subtitle{font-size:15px;fill:#506077}.panel-title{font-size:17px;font-weight:650}.axis{stroke:#9aa8bc;stroke-width:1}.grid{stroke:#dce3ec;stroke-width:1}.cam16{fill:none;stroke:#c74b50;stroke-width:3}.proposed{fill:none;stroke:#176f85;stroke-width:3}.ncb{fill:none;stroke:#7566b3;stroke-width:3}.j10{fill:none;stroke:#b06b15;stroke-width:2}.j90{fill:none;stroke:#1f8291;stroke-width:2}.envelope{fill:#dbeef1;stroke:none;opacity:.85}.legend{font-size:13px}.metric{font-size:14px}.metric-head{font-size:14px;font-weight:650}.warn{font-size:14px;font-weight:650;fill:#873b40}.foot{font-size:13px;fill:#59697f}</style>
+<rect width="1200" height="760" fill="#f7f9fc"/>
+<text x="60" y="50" class="title">CAM16 equation audit</text>
+<text x="60" y="78" class="subtitle">Published equations reproduced as bounded numerical diagnostics</text>
+<rect x="82.0" y="126.0" width="438.0" height="330.0" fill="#fff" stroke="#cbd5e1"/>
+<rect x="650.0" y="126.0" width="438.0" height="330.0" fill="#fff" stroke="#cbd5e1"/>
+<text x="82" y="112" class="panel-title">Normalized lightness and brightness</text>
+<text x="650" y="112" class="panel-title">Fixed-response CAM16 chroma (J₀ at Yb=20)</text>
+<line x1="82.0" y1="456.0" x2="520.0" y2="456.0" class="axis"/>
+<line x1="82.0" y1="126.0" x2="82.0" y2="456.0" class="axis"/>
+<line x1="650.0" y1="456.0" x2="1088.0" y2="456.0" class="axis"/>
+<line x1="650.0" y1="126.0" x2="650.0" y2="456.0" class="axis"/>
+<text x="76" y="477" class="legend">0</text><text x="183" y="477" class="legend">25</text><text x="293" y="477" class="legend">50</text><text x="402" y="477" class="legend">75</text><text x="506" y="477" class="legend">100</text>
+<text x="62" y="461" class="legend">0</text><text x="53" y="296" class="legend">0.5</text><text x="62" y="131" class="legend">1</text>
+<text x="638" y="477" class="legend">0.1</text><text x="835" y="477" class="legend">1</text><text x="968" y="477" class="legend">5</text><text x="1077" y="477" class="legend">20</text>
+<text x="625" y="461" class="legend">1</text><text x="625" y="277" class="legend">2</text><text x="616" y="167" class="legend">2.6</text>
+<polyline class="cam16" points="82.00,456.00 103.90,382.21 125.80,351.64 147.70,328.19 169.60,308.42 191.50,291.00 213.40,275.25 235.30,260.77 257.20,247.29 279.10,234.63 301.00,222.65 322.90,211.27 344.80,200.38 366.70,189.95 388.60,179.90 410.50,170.21 432.40,160.84 454.30,151.76 476.20,142.93 498.10,134.36 520.00,126.00"/>
+<polyline class="proposed" points="82.00,456.00 103.90,439.50 125.80,423.00 147.70,406.50 169.60,390.00 191.50,373.50 213.40,357.00 235.30,340.50 257.20,324.00 279.10,307.50 301.00,291.00 322.90,274.50 344.80,258.00 366.70,241.50 388.60,225.00 410.50,208.50 432.40,192.00 454.30,175.50 476.20,159.00 498.10,142.50 520.00,126.00"/>
+<polygon class="envelope" points="650.00,146.79 707.30,207.35 783.05,277.16 840.35,323.01 897.65,363.25 973.40,407.79 1030.70,434.70 1088.00,456.00 1088.00,456.00 1030.70,449.42 973.40,435.50 897.65,407.41 840.35,379.82 783.05,347.12 707.30,295.91 650.00,250.69"/>
+<polyline class="j10" points="650.00,146.79 707.30,207.35 783.05,277.16 840.35,323.01 897.65,363.25 973.40,407.79 1030.70,434.70 1088.00,456.00"/>
+<polyline class="j90" points="650.00,250.69 707.30,295.91 783.05,347.12 840.35,379.82 897.65,407.41 973.40,435.50 1030.70,449.42 1088.00,456.00"/>
+<polyline class="ncb" points="650.00,163.53 707.30,219.34 783.05,283.20 840.35,324.97 897.65,361.85 973.40,404.04 1030.70,431.64 1088.00,456.00"/>
+<line x1="350" y1="94" x2="378" y2="94" class="cam16"/><text x="386" y="99" class="legend">CAM16 sqrt(J/100)</text>
+<line x1="350" y1="116" x2="378" y2="116" class="proposed"/><text x="386" y="121" class="legend">proposed J/100</text>
+<text x="276" y="487" class="legend">J</text><text x="676" y="487" class="legend">relative background Yb (log scale)</text>
+<text x="95" y="146" class="legend">Q/Qw</text>
+<rect x="663" y="135" width="14" height="9" class="envelope"/><text x="682" y="145" class="legend">J₀=10–90</text>
+<line x1="772" y1="140" x2="794" y2="140" class="j10"/><text x="800" y="145" class="legend">J₀=10</text>
+<line x1="854" y1="140" x2="876" y2="140" class="j90"/><text x="882" y="145" class="legend">J₀=90</text>
+<line x1="936" y1="140" x2="958" y2="140" class="ncb"/><text x="964" y="145" class="legend">isolated Ncb^0.9</text>
+<text x="82" y="525" class="metric-head">Published comparison (R²)</text>
+<text x="82" y="554" class="metric">Brightness, LUTCHI</text>
+<text x="300" y="554" class="metric">0.86 → 0.95</text>
+<text x="82" y="581" class="metric">Chroma, Munsell</text>
+<text x="300" y="581" class="metric">0.87 → 0.96</text>
+<text x="82" y="608" class="metric">Colorfulness, LUTCHI</text>
+<text x="300" y="608" class="warn">0.81 → 0.71</text>
+<text x="650" y="525" class="metric-head">What the calculation shows</text>
+<text x="650" y="554" class="metric">J=25 gives half normalized CAM16 brightness;</text>
+<text x="650" y="577" class="metric">J=50 gives half normalized lightness.</text>
+<text x="650" y="608" class="metric">The isolated factor is neither an upper nor lower bound;</text>
+<text x="650" y="631" class="metric">the relation depends on Yb and reference J₀.</text>
+<text x="60" y="684" class="foot">Equation behavior, not observer validation.</text>
+<text x="60" y="708" class="foot">Paper equations and literal regression tests validate transcription, not perceptual accuracy.</text>
+<text x="60" y="732" class="foot">Source: Hellwig &amp; Fairchild (2022), doi:10.1002/col.22792; corrected Equation 23 coefficient 43.</text>
+</svg>

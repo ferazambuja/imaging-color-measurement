@@ -1,0 +1,2 @@
+patch_count,max_center_error_px,max_center_error_limit_px,rgb_correlation_minimum_required,rgb_correlation_gate_passes,geometry_gate_passes,coordinate_source_used
+140,16.449,5.0,0.999,true,false,manually_checked_rectangles
