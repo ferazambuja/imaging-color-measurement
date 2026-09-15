@@ -30,10 +30,9 @@ work, including the parts that did not resolve.
 - [Comparing four Display-P3 to sRGB gamut-mapping methods](gamut-mapping.md)
   — controlled coordinate and algorithm comparisons, analytic first-exit
   boundaries, the P3-yellow counterexample, and the device/observer boundary.
-- [CAM16 equation audit](cam16-equation-audit.md) — normalized brightness,
-  isolated and coupled background behavior, the corrected colorfulness
-  coefficient, a linked standalone two-model comparator, and the limit imposed
-  by the absence of observer data.
+- [CAM16 background coupling and Hellwig–Fairchild fit tradeoffs](cam16-equation-audit.md)
+  — different brightness midpoints, isolated and coupled background behavior,
+  the corrected colorfulness coefficient, and mixed fit results.
 - [Spectral measurement and reference-data cross-check](spectral-measurement-crosscheck.md)
   — repeated spectra on unlike grids, residual localization, contradictory
   observer metadata, and the acquisition-control limit.

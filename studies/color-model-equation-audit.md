@@ -1,4 +1,4 @@
-# Auditing a color-appearance equation before trusting it
+# An isolated CAM16 background term does not bound the coupled expression
 
 [Report](../reports/cam16-equation-audit.md) ·
 [Method and formulas](../methods/cam16-equation-audit.md) ·
@@ -12,8 +12,7 @@ brightness, chroma, and colorfulness under stated viewing conditions. Its
 equations are often inherited through papers and standards, where a term can
 look harmless in isolation while interacting differently with the rest of the
 model. This study turns a bounded subset of published CAM16-related equations
-into numerical experiments so that those interactions can be inspected rather
-than assumed.
+into numerical experiments that show how those interactions change the result.
 
 One term makes the case. Taken alone it reaches **2.595×**, while the complete
 coupled expression spans **2.120–2.687×** — crossing that value from both
@@ -35,13 +34,13 @@ The experiment has three parts:
 2. Evaluate the isolated `N_cb^0.9` background factor relative to
    `Y_background = 20`, then evaluate the complete background-dependent chroma
    expression over `J = 10…90`.
-3. Pin the corrected coefficient in the paper's colorfulness equation and
-   retain all six published fit statistics, including the unfavorable one.
+3. Apply the corrected coefficient in the paper's colorfulness equation and
+   compare all six fit statistics reported for the two formulations.
 
 The inputs are deterministic equation values. No camera, display, printer, or
 observer was measured in this study.
 
-## What the audit found
+## Results
 
 The two brightness relations agree at black and white but assign different
 midpoints. CAM16 reaches half normalized brightness at `J = 25`; the proposed
@@ -53,9 +52,9 @@ expression spans **2.120–2.687×** as reference lightness varies from
 `J = 90` to `J = 10`. The isolated term sits inside that range. It is neither
 a lower nor an upper bound on the complete expression under this sweep.
 
-The paper's reported fits also resist a one-directional summary: brightness
-improves from `R² = 0.86` to `0.95` and chroma from `0.87` to `0.96`, while
-colorfulness declines from `0.81` to `0.71`.
+The paper reports higher squared correlations for brightness (`R² = 0.86` to
+`0.95`) and chroma (`0.87` to `0.96`), and a lower one for colorfulness (`0.81`
+to `0.71`).
 
 ![Three-panel CAM16 equation audit showing normalized brightness, background-dependent chroma terms, and published fit statistics](../figures/cam16-equation-audit.svg)
 
@@ -63,19 +62,16 @@ colorfulness declines from `0.81` to `0.71`.
 background factor and the coupled range across `J = 10…90`. Right: the source
 paper's published fits, including the colorfulness regression.*
 
-## What this establishes—and what it does not
+## Scope of the result
 
-The audit establishes the numerical behavior of these declared equations and
-shows why a component should not be interpreted as the complete model. It also
-checks that the implementation carries the corrected coefficient `43` in the
-paper's colorfulness relation.
+The calculation shows the numerical behavior of the selected equations and why
+the isolated background term does not describe the complete coupled expression.
+It uses the corrected coefficient `43` in the paper's colorfulness relation.
 
-The bounded audit itself is not a full forward transform, a standards-
-conformance test, or an observer experiment. A separate
+This bounded sweep is not a full forward transform, a standards-conformance
+test, or an observer experiment. A separate
 [Python companion](https://github.com/ferazambuja/cam16-hellwig-comparator)
 evaluates both six-correlate forward formulations for caller-supplied XYZ and
-viewing conditions; that makes the equations reusable but does not change what
-the audit establishes. The published correlations are retained source-paper values;
-the underlying observer datasets were not re-fitted here. A perceptual conclusion
-would require suitable observer data, not a larger equation sweep or another
-model output table.
+viewing conditions. The published correlations come from the source paper; the
+observer datasets were not re-fitted here. Determining which formulation better
+predicts appearance requires suitable observer data.

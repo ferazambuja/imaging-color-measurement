@@ -1,4 +1,4 @@
-# CAM16 equation-audit method
+# Computing the CAM16 brightness and background comparison
 
 [Study](../studies/color-model-equation-audit.md) ·
 [Report](../reports/cam16-equation-audit.md) ·
@@ -10,21 +10,20 @@
 
 ## Scope
 
-This module evaluates selected scalar relations and one bounded coupled
-expression. It does not accept XYZ, perform chromatic adaptation, calculate
-adapted cone responses, or return a complete CAM16 appearance specification.
-That narrow API prevents an equation audit from being mistaken for a full
-model implementation.
+This module evaluates normalized brightness, the isolated `N_cb^0.9` term, one
+bounded coupled background expression, and the corrected colorfulness
+coefficient. Its inputs are already-computed correlates and relative background
+values; it does not perform chromatic adaptation or return a full CAM16
+appearance specification.
 
 The standalone Python comparator supplies six-correlate forward `J, Q, C, M,
-s, h` paths for standard CAM16 and the Hellwig–Fairchild 2022 proposal. It does
-not widen what this C++ study establishes: this module remains an isolation
-experiment whose inputs are already-declared correlates and background values.
+s, h` paths for standard CAM16 and the Hellwig–Fairchild 2022 proposal when a
+full XYZ-to-appearance calculation is needed.
 
 ## Calculation flow
 
 ```text
-declared J and relative background values
+input J and relative background values
               │
               ├── normalized brightness: sqrt(J/100) and J/100
               │
@@ -36,9 +35,9 @@ declared J and relative background values
                     └── reference-lightness exponent
 ```
 
-The report builder evaluates 21 brightness points (`J = 0…100` in steps of
-five), eight backgrounds, and nine positive reference-lightness values for
-each background. This produces 72 coupled points.
+The calculation evaluates 21 brightness points (`J = 0…100` in steps of five),
+eight backgrounds, and nine positive reference-lightness values for each
+background. This produces 72 coupled points.
 
 ## Operating conditions
 
@@ -47,13 +46,13 @@ The isolated factor is defined only for finite relative backgrounds in
 `(0,100]`; zero is rejected because it appears as the base of a generally
 non-zero exponent. Normalized brightness accepts finite `J` in `[0,100]`.
 
-The coupled sweep holds adapted responses fixed. Its result applies to that
-declared isolation of the background-dependent terms, not to arbitrary XYZ
+The coupled sweep holds adapted responses fixed. Its result applies to this
+controlled isolation of the background-dependent terms, not to arbitrary XYZ
 stimuli or viewing conditions.
 
 ## Corrected colorfulness relation
 
-The tested relation is:
+The corrected relation is:
 
 ```text
 M = 43 N_c e_t hypot(a, b)
@@ -63,12 +62,12 @@ M = 43 N_c e_t hypot(a, b)
 be finite. `hypot` avoids the unnecessary intermediate overflow risk of
 forming `a² + b²` directly. A non-finite result is rejected.
 
-## What the tests establish
+## Numerical checks
 
-The synthetic test executable checks:
+The checks cover:
 
 - the different brightness midpoints at `J = 25` and `50`;
-- exact isolated factors at four declared backgrounds;
+- exact isolated factors at four background values;
 - the two endpoints of the `Y_background = 0.1`, `J = 10…90` coupled range;
 - the fact that `2.595×` lies inside, rather than bounds, that range;
 - the coefficient `43` using a 3-4-5 opponent vector;
@@ -76,5 +75,5 @@ The synthetic test executable checks:
 - all six source-paper performance values; and
 - rejection of invalid domains and non-finite inputs.
 
-The tests establish the implementation's numerical contract. They do not
-validate the perceptual model or reproduce the paper's observer analysis.
+These checks cover the numerical implementation. Perceptual validation requires
+observer data and is outside this calculation.

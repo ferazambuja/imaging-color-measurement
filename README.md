@@ -163,12 +163,10 @@ proof that one better predicts observers.
 
 The public [CAM16/Hellwig comparator](https://github.com/ferazambuja/cam16-hellwig-comparator)
 accepts one XYZ sample or a CSV batch and returns either model or both as a
-labelled table, CSV, or JSON record. It is one standard-library Python file
-with no installation step. Use it when you want a dependency-free command-line
-tool or labelled CSV and JSON output without installing a package. Projects
-already using the Colour package should normally use Colour's maintained,
-vectorized forward and inverse APIs. The [portfolio comparison](https://ferazambuja.github.io/imaging/#cam16-hellwig-comparator)
-shows one generated example and connects it to the equation study.
+labelled table, CSV, or JSON record. It runs as one standard-library Python file.
+Projects already using the Colour package should normally use Colour's
+maintained, vectorized forward and inverse APIs. The [browser calculator](https://ferazambuja.github.io/imaging/cam16-hellwig-comparator/)
+evaluates either formulation for your XYZ values and viewing conditions.
 
 ## Building and running the tests
 

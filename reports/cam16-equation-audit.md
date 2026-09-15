@@ -1,4 +1,4 @@
-# CAM16 equation audit
+# CAM16 background coupling and Hellwig–Fairchild fit tradeoffs
 
 [Study](../studies/color-model-equation-audit.md) ·
 [Method and formulas](../methods/cam16-equation-audit.md) ·
@@ -7,7 +7,7 @@
 [Browser calculator](https://ferazambuja.github.io/imaging/cam16-hellwig-comparator/) ·
 [Standalone comparator](https://github.com/ferazambuja/cam16-hellwig-comparator)
 
-## Why audit an appearance-model equation?
+## Coupled terms change the interpretation
 
 Color appearance models connect colorimetry with perceptual attributes under
 specified viewing conditions. Because their equations are coupled, changing
@@ -27,9 +27,9 @@ brightness is an artifact of how the Hunt model was transcribed to CIECAM97s.”
 
 They state the consequence as a thought experiment. Asked to pick the gray
 card halfway between black and white by lightness, and then again by
-brightness, an observer picks the same card. CAM16 cannot: “the card that
-CAM16 predicts to have middle lightness will always be lighter than the card
-that CAM16 predicts to be middle brightness.”
+brightness, an observer picks the same card. CAM16 instead predicts different
+cards: “the card that CAM16 predicts to have middle lightness will always be
+lighter than the card that CAM16 predicts to be middle brightness.”
 
 Replacing that nonlinearity forces a reevaluation of the chroma, colorfulness,
 and saturation equations, which is where the background-dependence question
@@ -38,10 +38,10 @@ formulation: below a background luminance factor of 20, “the chroma of all
 colors increases, approaching infinity as `Y_B` approaches zero,” a behavior it
 attributes to the `N_cb` term.
 
-That is the setting for this audit. It reproduces a deliberately small subset
-of those deterministic consequences, includes the proposal's worse reported
-fit to the LUTCHI colorfulness data, and says where a calculation about
-equations stops and a statement about observers would begin.
+This report reproduces selected consequences of those equations, uses the
+corrected colorfulness coefficient, and compares the paper's reported fits for
+brightness, chroma, and colorfulness. The observer correlations are quoted from
+the paper rather than re-fitted here.
 
 ## Normalized brightness
 
@@ -104,25 +104,22 @@ lightness from `J = 10` through `90`.
 At `Y_background = 5`, the coupled result stays below the isolated factor. At
 `1` and `0.1`, it crosses that factor as lightness changes. The direction and
 size of the difference therefore depend on both background and reference
-lightness. Quoting `2.595×` alone would conceal that interaction.
+lightness; the isolated `2.595×` value does not describe the coupled response.
 
-## Corrected coefficient and retained tradeoff
+## Corrected coefficient and mixed fit results
 
 Equation 23 was corrected after first online publication. The paper prints the
 notice directly beneath the equation: “[Correction added on 22nd April 2022,
 after first online publication. Equation (23) correction has been updated.]”
-Two forms are therefore in circulation, and a reproduction agrees only when it
-uses the same one. This implementation pins the corrected form, whose leading
-coefficient is `43`:
+Two forms are therefore in circulation. This implementation uses the corrected
+form, whose leading coefficient is `43`:
 
 ```text
 M = 43 N_c e_t sqrt(a² + b²)
 ```
 
 For `N_c = e_t = 1` and a 3-4-5 opponent vector, direct substitution gives
-`43 × 5 = 215`. The test suite asserts that value, so a silent revert to an
-uncorrected coefficient fails the build rather than shifting every published
-colorfulness figure at once.
+`43 × 5 = 215`, providing a compact numerical check of the corrected form.
 
 The paper reports the following squared correlations:
 
@@ -132,37 +129,25 @@ The paper reports the following squared correlations:
 | Munsell chroma | 0.87 | 0.96 | Figure 6 |
 | LUTCHI colorfulness | 0.81 | 0.71 | Figure 7 |
 
-The last row matters: the proposal improves the reported brightness and chroma
-fits but worsens colorfulness on the listed dataset. The paper does not treat
-that as a defect to be hidden. It argues the proposed colorfulness must scale
-with the achromatic white signal `A_W` so that colorfulness and brightness stay
-in proportion as scene luminance changes—the condition for saturation to remain
-invariant to luminance level—and concludes on that basis that “the worse
-performance on the LUTCHI colorfulness data by the proposed colorfulness
-formulas is permissible.”
-
-These are values reported by the paper, not correlations independently
-reproduced from observer records in this portfolio.
+The proposal's reported squared correlations are higher for brightness and
+chroma but lower for colorfulness on the listed datasets. The authors accept
+the lower colorfulness fit because their formulation keeps colorfulness
+proportional to brightness as scene luminance changes, so saturation remains
+invariant to luminance level.
 
 ![Three-panel CAM16 equation audit showing normalized brightness, background-dependent chroma terms, and published fit statistics](../figures/cam16-equation-audit.svg)
 
 *The straight brightness line is the proposed relation; the curved line is
-CAM16. In the center panel, the gap and crossing between the isolated term and
-the coupled range are the finding—not plotting uncertainty. The right panel
-preserves all three reported comparisons.*
+CAM16. The center panel compares the isolated term with the coupled range. The
+right panel shows all three fit statistics reported in the paper.*
 
-## What this calculation cannot answer
-
-The CSV is fully regenerable from the published equation module. The tests pin
-the curve sizes, representative points, coupled endpoints, corrected
-coefficient, and domain rejections.
+## Scope and related implementation
 
 The separate [Python companion](https://github.com/ferazambuja/cam16-hellwig-comparator)
-implements both six-correlate forward paths for declared XYZ and viewing
-conditions, making the formulation comparison usable outside this report's
-fixed grid. That software extension does not add perceptual validation. Observer
-validation would still require suitable observer data and a study designed for
-that question; extending either numerical grid would not cross that boundary.
+applies both six-correlate forward formulations to user-supplied XYZ and viewing
+conditions. It extends the numerical comparison beyond this fixed sweep but
+includes no observer data. Determining which formulation better predicts
+appearance requires observer measurements designed for that question.
 
 Neither this audit nor the companion maps results into CAM16-UCS. That follows
 the paper's own limit on how far its proposal has been carried: “The uniform

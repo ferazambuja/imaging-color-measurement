@@ -26,9 +26,9 @@ display.
 - [Gamut mapping](gamut-mapping.md) — RGB/XYZ transforms, analytic CIELAB and
   OkLCh first-exit boundaries, four mapping intents, typed diagnostics, and
   invalid-input handling.
-- [CAM16 equation audit](cam16-equation-audit.md) — normalized brightness,
-  isolated and coupled background factors, the corrected colorfulness
-  relation, operating domains, and invalid-input handling.
+- [CAM16 brightness and background calculation](cam16-equation-audit.md) —
+  normalized brightness, isolated and coupled background factors, the corrected
+  colorfulness relation, operating domains, and invalid-input handling.
 - [Spectral comparison](spectral-comparison.md) — native and common-grid
   normalization, directional relative L2, per-band localization, diagnostic
   exclusions, offset sensitivity, and invalid-input handling.
