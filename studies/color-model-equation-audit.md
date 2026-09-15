@@ -68,6 +68,7 @@ the isolated background term does not describe the complete coupled expression.
 It uses the corrected coefficient `43` in the paper's colorfulness relation.
 
 This bounded sweep is not a full forward transform, a standards-conformance
-test, or an observer experiment. The published correlations come from the
-source paper; the observer datasets were not re-fitted here. Determining which
-formulation better predicts appearance requires suitable observer data.
+test, or an observer experiment. The reported coefficients of determination
+come from the source paper; the observer datasets were not re-fitted here.
+Determining which formulation better predicts appearance requires suitable
+observer data.
