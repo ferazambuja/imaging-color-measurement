@@ -14,9 +14,8 @@ specified viewing conditions. Because their equations are coupled, changing
 one term can have a consequence that is obscured when the term is quoted by
 itself. The source paper makes the same point about its own proposal: “changes
 made to one part of a color appearance model can have unexpected repercussions
-in other parts.” The practical question is therefore not only whether an
-equation was transcribed correctly, but also whether the interpretation
-survives when the surrounding terms are restored.
+in other parts.” The practical question is how the isolated term behaves when
+the surrounding terms are restored.
 
 ## What the source paper argues
 
@@ -40,8 +39,7 @@ attributes to the `N_cb` term.
 
 This report reproduces selected consequences of those equations, uses the
 corrected colorfulness coefficient, and compares the paper's reported fits for
-brightness, chroma, and colorfulness. The observer correlations are quoted from
-the paper rather than re-fitted here.
+brightness, chroma, and colorfulness.
 
 ## Normalized brightness
 
@@ -60,8 +58,7 @@ Q / Q_white = J / 100
 Both map `J = 0` to black and `J = 100` to white. Inside that interval they
 differ: at `J = 25`, CAM16 gives `0.5` while the linear relation gives `0.25`;
 at `J = 50`, they give approximately `0.707` and `0.5`. The calculation shows
-the consequence of the two definitions. It does not decide which better
-predicts an observer.
+the consequence of the two definitions.
 
 ## Isolated and coupled background behavior
 
@@ -141,18 +138,17 @@ invariant to luminance level.
 CAM16. The center panel compares the isolated term with the coupled range. The
 right panel shows all three fit statistics reported in the paper.*
 
-## Scope and related implementation
+## Scope of the result
 
-The separate [Python companion](https://github.com/ferazambuja/cam16-hellwig-comparator)
-applies both six-correlate forward formulations to user-supplied XYZ and viewing
-conditions. It extends the numerical comparison beyond this fixed sweep but
-includes no observer data. Determining which formulation better predicts
-appearance requires observer measurements designed for that question.
+This calculation includes no observer data. Determining which formulation
+better predicts appearance requires measurements designed for that question.
 
-Neither this audit nor the companion maps results into CAM16-UCS. That follows
-the paper's own limit on how far its proposal has been carried: “The uniform
-color space CAM16-UCS was not considered in this article and certainly needs to
-be revised and refit to experimental data given the changes proposed here.”
+Neither this audit nor the
+[standalone comparator](https://github.com/ferazambuja/cam16-hellwig-comparator)
+maps results into CAM16-UCS. That follows the paper's own limit on how far its
+proposal has been carried: “The uniform color space CAM16-UCS was not considered
+in this article and certainly needs to be revised and refit to experimental data
+given the changes proposed here.”
 
 ## Source
 

@@ -35,10 +35,10 @@ The experiment has three parts:
    `Y_background = 20`, then evaluate the complete background-dependent chroma
    expression over `J = 10…90`.
 3. Apply the corrected coefficient in the paper's colorfulness equation and
-   compare all six fit statistics reported for the two formulations.
+   compare the three fit results reported for both formulations.
 
-The inputs are deterministic equation values. No camera, display, printer, or
-observer was measured in this study.
+This is a numerical equation study using deterministic inputs rather than new
+measurements.
 
 ## Results
 
@@ -46,11 +46,10 @@ The two brightness relations agree at black and white but assign different
 midpoints. CAM16 reaches half normalized brightness at `J = 25`; the proposed
 linear relation reaches it at `J = 50`.
 
-The background experiment exposes the more important lesson. At
-`Y_background = 0.1`, the isolated factor is **2.595×**, but the coupled
-expression spans **2.120–2.687×** as reference lightness varies from
-`J = 90` to `J = 10`. The isolated term sits inside that range. It is neither
-a lower nor an upper bound on the complete expression under this sweep.
+At `Y_background = 0.1`, the isolated factor is **2.595×**, but the coupled
+expression spans **2.120–2.687×** as reference lightness varies from `J = 90`
+to `J = 10`. The isolated term sits inside that range. It is neither a lower
+nor an upper bound on the complete expression under this sweep.
 
 The paper reports higher squared correlations for brightness (`R² = 0.86` to
 `0.95`) and chroma (`0.87` to `0.96`), and a lower one for colorfulness (`0.81`
@@ -69,9 +68,6 @@ the isolated background term does not describe the complete coupled expression.
 It uses the corrected coefficient `43` in the paper's colorfulness relation.
 
 This bounded sweep is not a full forward transform, a standards-conformance
-test, or an observer experiment. A separate
-[Python companion](https://github.com/ferazambuja/cam16-hellwig-comparator)
-evaluates both six-correlate forward formulations for caller-supplied XYZ and
-viewing conditions. The published correlations come from the source paper; the
-observer datasets were not re-fitted here. Determining which formulation better
-predicts appearance requires suitable observer data.
+test, or an observer experiment. The published correlations come from the
+source paper; the observer datasets were not re-fitted here. Determining which
+formulation better predicts appearance requires suitable observer data.
