@@ -134,9 +134,9 @@ grid mean to **2.323** and the maximum to **7.602**, while widening the
 
 The isolated background term reaches **2.595×**, while the coupled expression
 spans **2.120–2.687×** and crosses it. The proposed formulation also reports
-higher fitted correlations for brightness and chroma but a lower one for
-colorfulness. A separate calculator evaluates both forward formulations for
-user-supplied XYZ and viewing conditions.
+higher coefficients of determination for brightness and chroma but a lower one
+for colorfulness. A separate calculator evaluates both forward formulations
+for user-supplied XYZ and viewing conditions.
 
 [Study](color-model-equation-audit.md) ·
 [report](../reports/cam16-equation-audit.md) ·
