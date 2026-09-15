@@ -130,22 +130,20 @@ grid mean to **2.323** and the maximum to **7.602**, while widening the
 
 ![Display-P3 to sRGB gamut-mapping comparison](../figures/gamut-mapping.svg)
 
-### [Color-model equation audit](color-model-equation-audit.md)
+### [An isolated CAM16 background term does not bound the coupled expression](color-model-equation-audit.md)
 
-Turns a bounded subset of published CAM16-related equations into numerical
-checks, preserving favorable and unfavorable consequences without presenting
-it as a full model or observer study. A separate Python companion makes both
-forward formulations reusable without turning model output into observer
-validation.
+The isolated background term reaches **2.595×**, while the coupled expression
+spans **2.120–2.687×** and crosses it. The proposed formulation also reports
+higher fitted correlations for brightness and chroma but a lower one for
+colorfulness. A separate calculator evaluates both forward formulations for
+user-supplied XYZ and viewing conditions.
 
 [Study](color-model-equation-audit.md) ·
 [report](../reports/cam16-equation-audit.md) ·
 [audit method](../methods/cam16-equation-audit.md) ·
 [standalone comparator](https://github.com/ferazambuja/cam16-hellwig-comparator)
 
-An isolated background term reaches **2.595×**, while the complete coupled
-expression spans **2.120–2.687×** — crossing that value from both sides. The
-isolated factor is therefore neither a lower nor an upper bound on the complete
-expression under this declared equation sweep.
+The isolated factor is therefore neither a lower nor an upper bound on the
+complete expression in this equation sweep.
 
 ![Color-model equation audit](../figures/cam16-equation-audit.svg)
