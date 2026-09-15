@@ -51,9 +51,9 @@ expression spans **2.120–2.687×** as reference lightness varies from `J = 90`
 to `J = 10`. The isolated term sits inside that range. It is neither a lower
 nor an upper bound on the complete expression under this sweep.
 
-The paper reports higher squared correlations for brightness (`R² = 0.86` to
-`0.95`) and chroma (`0.87` to `0.96`), and a lower one for colorfulness (`0.81`
-to `0.71`).
+The paper reports higher coefficients of determination for brightness
+(`R² = 0.86` to `0.95`) and chroma (`0.87` to `0.96`), and a lower one for
+colorfulness (`0.81` to `0.71`).
 
 ![Three-panel CAM16 equation audit showing normalized brightness, background-dependent chroma terms, and published fit statistics](../figures/cam16-equation-audit.svg)
 

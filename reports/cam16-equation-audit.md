@@ -12,30 +12,27 @@
 Color appearance models connect colorimetry with perceptual attributes under
 specified viewing conditions. Because their equations are coupled, changing
 one term can have a consequence that is obscured when the term is quoted by
-itself. The source paper makes the same point about its own proposal: “changes
-made to one part of a color appearance model can have unexpected repercussions
-in other parts.” The practical question is how the isolated term behaves when
-the surrounding terms are restored.
+itself. The source paper likewise warns that a local change can affect other
+parts of a color appearance model. The practical question is how the isolated
+term behaves when the surrounding terms are restored.
 
 ## What the source paper argues
 
 Hellwig and Fairchild revisit how CIECAM02 and CAM16 relate brightness to
 lightness, and trace the nonlinearity between them to a transcription rather
-than to a measurement: “the nonlinear relationship between lightness, J, and
-brightness is an artifact of how the Hunt model was transcribed to CIECAM97s.”
+than to a measurement in the development from the Hunt model to CIECAM97s.
 
 They state the consequence as a thought experiment. Asked to pick the gray
 card halfway between black and white by lightness, and then again by
 brightness, an observer picks the same card. CAM16 instead predicts different
-cards: “the card that CAM16 predicts to have middle lightness will always be
-lighter than the card that CAM16 predicts to be middle brightness.”
+cards, with its middle-lightness card lighter than its middle-brightness card.
 
 Replacing that nonlinearity forces a reevaluation of the chroma, colorfulness,
 and saturation equations, which is where the background-dependence question
 below comes from. The paper also identifies a limit case in the current
-formulation: below a background luminance factor of 20, “the chroma of all
-colors increases, approaching infinity as `Y_B` approaches zero,” a behavior it
-attributes to the `N_cb` term.
+formulation: below a background luminance factor of 20, chroma rises for every
+color and tends toward infinity as `Y_B` approaches zero. It attributes that
+behavior to the `N_cb` term.
 
 This report reproduces selected consequences of those equations, uses the
 corrected colorfulness coefficient, and compares the paper's reported fits for
@@ -105,11 +102,10 @@ lightness; the isolated `2.595×` value does not describe the coupled response.
 
 ## Corrected coefficient and mixed fit results
 
-Equation 23 was corrected after first online publication. The paper prints the
-notice directly beneath the equation: “[Correction added on 22nd April 2022,
-after first online publication. Equation (23) correction has been updated.]”
-Two forms are therefore in circulation. This implementation uses the corrected
-form, whose leading coefficient is `43`:
+Equation 23 was corrected on 22 April 2022, after first online publication.
+The authors' downloadable early copy still shows `47`, while the corrected
+article and the Colour implementation use `43`. This implementation uses the
+corrected form:
 
 ```text
 M = 43 N_c e_t sqrt(a² + b²)
@@ -118,7 +114,7 @@ M = 43 N_c e_t sqrt(a² + b²)
 For `N_c = e_t = 1` and a 3-4-5 opponent vector, direct substitution gives
 `43 × 5 = 215`, providing a compact numerical check of the corrected form.
 
-The paper reports the following squared correlations:
+The paper reports the following coefficients of determination:
 
 | Dataset / correlate | CAM16 | Proposed relation | Reported in |
 |---|---:|---:|---|
@@ -126,11 +122,12 @@ The paper reports the following squared correlations:
 | Munsell chroma | 0.87 | 0.96 | Figure 6 |
 | LUTCHI colorfulness | 0.81 | 0.71 | Figure 7 |
 
-The proposal's reported squared correlations are higher for brightness and
-chroma but lower for colorfulness on the listed datasets. The authors accept
-the lower colorfulness fit because their formulation keeps colorfulness
-proportional to brightness as scene luminance changes, so saturation remains
-invariant to luminance level.
+The proposal's reported coefficients are higher for brightness and chroma but
+lower for colorfulness on the listed datasets. The authors argue that the
+colorfulness tradeoff preserves proportionality with brightness as scene
+luminance changes, so saturation remains invariant to luminance level. They
+also leave the relation between colorfulness and adapting luminance open for
+further study.
 
 ![Three-panel CAM16 equation audit showing normalized brightness, background-dependent chroma terms, and published fit statistics](../figures/cam16-equation-audit.svg)
 
@@ -146,9 +143,8 @@ better predicts appearance requires measurements designed for that question.
 Neither this audit nor the
 [standalone comparator](https://github.com/ferazambuja/cam16-hellwig-comparator)
 maps results into CAM16-UCS. That follows the paper's own limit on how far its
-proposal has been carried: “The uniform color space CAM16-UCS was not considered
-in this article and certainly needs to be revised and refit to experimental data
-given the changes proposed here.”
+proposal has been carried: CAM16-UCS was outside its scope and would need to be
+revised and fitted again before these changes could be used there.
 
 ## Source
 
@@ -157,5 +153,4 @@ Chroma in CIECAM02 and CAM16,” *Color Research & Application* 47 (2022),
 1083–1095, [doi:10.1002/col.22792](https://doi.org/10.1002/col.22792).
 
 Equation 23 carries a correction added 22 April 2022, after first online
-publication. The corrected form is the one implemented here; quotations above
-are from the corrected article.
+publication. The corrected form is the one implemented here.
